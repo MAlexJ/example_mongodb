@@ -1,0 +1,3 @@
+rootProject.name = 'migration_tool'
+
+include 'minimal_working_example'

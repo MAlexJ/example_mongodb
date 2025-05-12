@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: minimal_working_example
+
+  config:
+    import: optional:file:.env[.properties]
+
+  threads:
+    virtual:
+      enabled: true
+
+  data:
+    mongodb:
+      uri: ${DB_MONGODB_URI}
+      database: ${DB_MONGODB_DATABASE}
+
+mongock:
+  migration-scan-package: com.malex.db.changelogs

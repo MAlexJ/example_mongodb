@@ -4,3 +4,6 @@ plugins {
 }
 
 rootProject.name = 'example_mongodb'
+
+include 'migration_tool',
+        'migration_tool:minimal_working_example'
